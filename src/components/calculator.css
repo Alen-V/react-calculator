@@ -1,0 +1,90 @@
+.calculator-container {
+    height: 600px;
+    width: 300px;
+    background: #393939;
+    border-radius: 25px;
+}
+
+.keypad-container {
+    height: calc(60% - 15px);
+    margin: 15px 0 0px 0px;
+    /* border-radius: 25px; */
+    color: white;
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    font-size: 17px;
+}
+
+.numpad-container {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.keypad-container .numpad-container .keypad-row {
+    display: flex;
+    width: 100%;
+    height: calc(100% / 5);
+}
+
+.keypad-container .numpad-container .keypad-row .keypad-num {
+    width: calc(100% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.keypad-container .numpad-container .keypad-row .keypad-num span {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 80%;
+    /* border-bottom: 2px solid #848282; */
+    width: 80%;
+    transition: all ease .225s;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgb(255 255 255 / 40%);
+}
+
+.keypad-container .numpad-container .keypad-row .keypad-num span:active {
+    border: none;
+    box-shadow: none;
+    height: 70%;
+    width: 70%;
+}
+
+.keypad-container .numpad-container .keypad-row .keypad-num span::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .2);
+    transition: all linear 0.225s;
+    mix-blend-mode: soft-light;
+}
+
+.keypad-container .numpad-container .keypad-row .keypad-num span:hover::before {
+    height: 100%;
+    border-radius: inherit;
+}
+
+.display-container {
+    height: 40%;
+    border-radius: 25px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 20px;
+    font-size: 43px;
+}
+#root .keypad-container .numpad-container .keypad-row.row0 .keypad-num.key1, #root .keypad-container .numpad-container .keypad-row.row0 .keypad-num.key2 {
+    cursor: not-allowed;
+}
+
+.display-container span {
+    word-break: break-word;
+}
