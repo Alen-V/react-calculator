@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/calculator-react/static/css/main.7d35ecad.chunk.css",
-    "main.js": "/calculator-react/static/js/main.22f31093.chunk.js",
-    "main.js.map": "/calculator-react/static/js/main.22f31093.chunk.js.map",
-    "runtime-main.js": "/calculator-react/static/js/runtime-main.d2a3dad0.js",
-    "runtime-main.js.map": "/calculator-react/static/js/runtime-main.d2a3dad0.js.map",
-    "static/js/2.13645dcb.chunk.js": "/calculator-react/static/js/2.13645dcb.chunk.js",
-    "static/js/2.13645dcb.chunk.js.map": "/calculator-react/static/js/2.13645dcb.chunk.js.map",
-    "static/js/3.16d00d83.chunk.js": "/calculator-react/static/js/3.16d00d83.chunk.js",
-    "static/js/3.16d00d83.chunk.js.map": "/calculator-react/static/js/3.16d00d83.chunk.js.map",
-    "index.html": "/calculator-react/index.html",
-    "static/css/main.7d35ecad.chunk.css.map": "/calculator-react/static/css/main.7d35ecad.chunk.css.map",
-    "static/js/2.13645dcb.chunk.js.LICENSE.txt": "/calculator-react/static/js/2.13645dcb.chunk.js.LICENSE.txt"
+    "main.css": "/react-calculator/static/css/main.7d35ecad.chunk.css",
+    "main.js": "/react-calculator/static/js/main.22f31093.chunk.js",
+    "main.js.map": "/react-calculator/static/js/main.22f31093.chunk.js.map",
+    "runtime-main.js": "/react-calculator/static/js/runtime-main.0328f09b.js",
+    "runtime-main.js.map": "/react-calculator/static/js/runtime-main.0328f09b.js.map",
+    "static/js/2.13645dcb.chunk.js": "/react-calculator/static/js/2.13645dcb.chunk.js",
+    "static/js/2.13645dcb.chunk.js.map": "/react-calculator/static/js/2.13645dcb.chunk.js.map",
+    "static/js/3.16d00d83.chunk.js": "/react-calculator/static/js/3.16d00d83.chunk.js",
+    "static/js/3.16d00d83.chunk.js.map": "/react-calculator/static/js/3.16d00d83.chunk.js.map",
+    "index.html": "/react-calculator/index.html",
+    "static/css/main.7d35ecad.chunk.css.map": "/react-calculator/static/css/main.7d35ecad.chunk.css.map",
+    "static/js/2.13645dcb.chunk.js.LICENSE.txt": "/react-calculator/static/js/2.13645dcb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d2a3dad0.js",
+    "static/js/runtime-main.0328f09b.js",
     "static/js/2.13645dcb.chunk.js",
     "static/css/main.7d35ecad.chunk.css",
     "static/js/main.22f31093.chunk.js"
