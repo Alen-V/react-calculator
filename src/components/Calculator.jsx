@@ -71,7 +71,7 @@ class Calculator extends React.Component {
         if ( func === '+/-' || func === '%' ) {
             return
         }
-        let { display, firstInput, secondInput, operation, inputState } = this.state
+        let { display, firstInput, secondInput, operation, inputState, inputNum } = this.state
         let result = 0;
         let operations = ['x', '/', '+', '-']
         if ( func === '/' || func === 'x' || func === '+' || func === '-' ) {
@@ -109,7 +109,7 @@ class Calculator extends React.Component {
             } else if ( !inputState && operation === '' ) {
                 firstInput = firstInput.toString().slice(0, -1)
                 this.setState({
-                    firstInput: firstInput
+                    inputNum: firstInput
                 })
             }
                 display = display.toString().slice(0,-1)
@@ -135,16 +135,18 @@ class Calculator extends React.Component {
                 })
             break;
             case '=': 
-            result = this.doMath(firstInput, secondInput, operation) 
-            this.setState({
-                display: result,
-                firstInput: result,
-                secondaryDisplay: display + '=',
-                secondInput: 0,
-                inputNum: 0,
-                operation: '',
-                inputState: false
-            })
+            if ( operation !== '' ) {
+                result = this.doMath(firstInput, secondInput, operation) 
+                this.setState({
+                    display: result,
+                    firstInput: result,
+                    secondaryDisplay: display + '=',
+                    secondInput: 0,
+                    inputNum: 0,
+                    operation: '',
+                    inputState: false
+                })
+            }
             break;
         default: break;
         }
